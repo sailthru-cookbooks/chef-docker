@@ -75,7 +75,7 @@ module DockerHelpers
   end
 
   def docker_daemon_cmd
-    cmd = "#{docker_bin} -d"
+    cmd = "#{docker_bin} daemon"
     docker_opts.each { |opt| cmd << opt }
     cmd
   end
